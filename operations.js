@@ -1,5 +1,3 @@
-const assert = require('assert').strict;
-
 exports.insertDocument = (db, document, collection) => {
     const coll = db.collection(collection);
     return coll.insertOne(document);
